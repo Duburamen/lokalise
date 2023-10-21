@@ -1,0 +1,18 @@
+@import "reset";
+@import "typography";
+@import "variables";
+
+._container {
+  max-width: 134rem;
+  margin: 0px auto;
+  padding: 0px 2rem;
+  box-sizing: content-box;
+}
+
+.header__body {
+  display: flex;
+}
+
+.header__menu {
+  list-style: none;
+}

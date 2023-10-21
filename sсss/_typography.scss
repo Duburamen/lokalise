@@ -1,0 +1,20 @@
+@font-face {
+  font-family: "Graphik";
+  src: url("../dist/fonts/Graphik-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Graphik";
+  src: url("../dist/fonts/Graphik-Semibold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+}
+
+a,
+a:visited,
+a:active {
+  color: #000;
+  text-decoration: none;
+}
