@@ -1,0 +1,44 @@
+@use "../abstracts" as *;
+
+.hero {
+  &__body {
+    display: flex;
+  }
+
+  &__info {
+  }
+
+  &__heading {
+    margin-bottom: rem(50);
+    max-width: 15ch;
+    font-size: rem(65);
+    font-weight: 600;
+  }
+
+  &__desc {
+    margin-bottom: rem(50);
+    max-width: 33ch;
+    font-size: rem(25);
+  }
+
+  &__buttons {
+    margin-bottom: rem(25);
+  }
+
+  &__btn {
+    min-width: rem(160);
+    min-height: rem(60);
+    text-align: center;
+
+    &:first-child {
+      margin-right: rem(10);
+    }
+  }
+
+  &__notice {
+    font-size: rem(15);
+  }
+
+  &__image {
+  }
+}
