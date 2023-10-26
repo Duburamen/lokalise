@@ -1,31 +1,83 @@
-/*
-  Josh's Custom CSS Reset
-  https://www.joshwcomeau.com/css/custom-css-reset/
-*/
+.container {
+  max-width: 83.75rem;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* Box sizing rules */
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
 
-* {
+/* Prevent font size inflation */
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+}
+
+/* Remove default margin in favour of better control in authored CSS */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
   margin: 0;
 }
 
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role=list],
+ol[role=list] {
+  list-style: none;
+}
+
+/* Set core body defaults */
 body {
+  min-height: 100vh;
   line-height: 1.5;
-  -webkit-font-smoothing: antialiased;
 }
 
+/* Set shorter line heights on headings and interactive elements */
+h1,
+h2,
+h3,
+h4,
+button,
+input,
+label {
+  line-height: 1.1;
+}
+
+/* Balance text wrapping on headings */
+h1,
+h2,
+h3,
+h4 {
+  text-wrap: balance;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  -webkit-text-decoration-skip: ink;
+          text-decoration-skip-ink: auto;
+  color: currentColor;
+}
+
+/* Make images easier to work with */
 img,
-picture,
-video,
-canvas,
-svg {
-  display: block;
+picture {
   max-width: 100%;
+  display: block;
 }
 
+/* Inherit fonts for inputs and buttons */
 input,
 button,
 textarea,
@@ -33,33 +85,20 @@ select {
   font: inherit;
 }
 
-p,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  overflow-wrap: break-word;
+/* Make sure textareas without a rows attribute are not tiny */
+textarea:not([rows]) {
+  min-height: 10em;
 }
 
-#root,
-#__next {
-  isolation: isolate;
+/* Anything that has been anchored to should have extra scroll margin */
+:target {
+  scroll-margin-block: 5ex;
 }
 
-@font-face {
-  font-family: "Graphik";
-  src: url("../dist/fonts/Graphik-Regular.woff2") format("woff2");
-  font-weight: normal;
-  font-style: normal;
+html {
+  font-family: "Roboto", sans-serif;
 }
-@font-face {
-  font-family: "Graphik";
-  src: url("../dist/fonts/Graphik-Semibold.woff2") format("woff2");
-  font-weight: 600;
-  font-style: normal;
-}
+
 a,
 a:visited,
 a:active {
@@ -67,17 +106,69 @@ a:active {
   text-decoration: none;
 }
 
-._container {
-  max-width: 134rem;
-  margin: 0px auto;
-  padding: 0px 2rem;
-  box-sizing: content-box;
+button {
+  all: unset;
 }
 
+.button-black {
+  padding: 0.75rem 2.25rem;
+  border: 1px solid hsla(0, 0%, 0%, 0.5);
+  font-weight: 700;
+  background: #fff;
+  color: #000;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.15s ease-in, color 0.15s ease;
+}
+.button-black:hover, .button-black:focus {
+  background: #000;
+  color: #fff;
+}
+.button-black:focus {
+  outline: 1px solid #fff;
+  outline-offset: -4px;
+}
+
+.button-orange {
+  padding: 0.75rem 1.375rem;
+  border: 1px solid hsl(13, 100%, 61%);
+  font-weight: 700;
+  background: hsl(13, 100%, 61%);
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.15s ease-in, color 0.15s ease;
+}
+.button-orange:hover, .button-orange:focus {
+  background: hsl(13, 69%, 53%);
+  color: #fff;
+}
+.button-orange:focus {
+  outline: 1px solid #fff;
+  outline-offset: -4px;
+}
+
+.header {
+  border-bottom: 1px solid hsl(0, 0%, 80%);
+}
 .header__body {
+  margin-top: 2.1875rem;
+  margin-bottom: 1.5625rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__nav {
   display: flex;
 }
-
 .header__menu {
+  display: flex;
   list-style: none;
+  gap: 2.8125rem;
+}
+.header__buttons {
+  margin-left: 21.875rem;
+}
+.header__btn:not(:last-child) {
+  margin-right: 10px;
 }/*# sourceMappingURL=main.css.map */

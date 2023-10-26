@@ -1,0 +1,51 @@
+@use '../abstracts/' as *;
+
+button {
+    all: unset;
+}
+
+.button-black {
+    padding: rem(12) rem(36);
+    border: 1px solid hsla(0, 0%, 0%, 0.5);
+    font-weight: 700;
+    background: #fff;
+    color: #000;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.15s ease-in,
+                color 0.15s ease;
+
+    &:hover,
+    &:focus {
+        background: #000;
+        color: #fff;
+    }
+
+    &:focus {
+        outline: 1px solid #fff;
+        outline-offset: -4px;
+    }
+}
+
+.button-orange {
+    padding: rem(12) rem(22);
+    border: 1px solid hsl(13, 100%, 61%);
+    font-weight: 700;
+    background: hsl(13, 100%, 61%);
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.15s ease-in,
+                color 0.15s ease;
+
+    &:hover,
+    &:focus {
+        background:hsl(13, 69%, 53%);
+        color: #fff;
+    }
+
+    &:focus {
+        outline: 1px solid #fff;
+        outline-offset: -4px;
+    }
+}

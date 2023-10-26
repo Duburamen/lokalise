@@ -1,0 +1,22 @@
+@use "functions" as *;
+
+// for min-width
+
+$breakpoints-up: (
+  sm: em(576),
+  md: em(768),
+  lg: em(992),
+  xl: em(1200),
+  xxl: em(1400),
+);
+
+// for max-width
+
+$breakpoints-down: (
+  xs: em(575.98),
+  sm: em(767.98),
+  md: em(991.98),
+  lg: em(1199.98),
+  xl: em(1399.98),
+);
+

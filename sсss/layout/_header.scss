@@ -1,0 +1,43 @@
+@use "../abstracts" as *;
+
+.header {
+    border-bottom: 1px solid hsl(0, 0%, 80%);
+
+  &__body {
+    margin-top: rem(35);
+    margin-bottom: rem(25);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+  }
+
+  &__logo {
+  }
+
+  &__nav {
+    display: flex;
+  }
+
+  &__menu {
+    display: flex;
+    list-style: none;
+    gap: rem(45);
+  }
+
+  &__item {
+  }
+
+  &__link {
+  }
+
+  &__buttons {
+    margin-left: rem(350);
+  }
+
+  &__btn {
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
+  }
+}
