@@ -148,6 +148,7 @@ button {
 }
 
 .header {
+  margin-bottom: 8.125rem;
   border-bottom: 1px solid hsl(0, 0%, 80%);
 }
 .header__body {

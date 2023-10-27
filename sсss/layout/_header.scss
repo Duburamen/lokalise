@@ -1,6 +1,7 @@
 @use "../abstracts" as *;
 
 .header {
+  margin-bottom: rem(130);
   border-bottom: 1px solid hsl(0, 0%, 80%);
 
   &__body {
