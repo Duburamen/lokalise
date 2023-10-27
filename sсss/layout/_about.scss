@@ -1,0 +1,52 @@
+@use "../abstracts" as *;
+
+.about {
+  padding: rem(90) 0 rem(150);
+
+  &__body {
+  }
+
+  &__advantages {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &:not(:last-child) {
+      margin-bottom: rem(250);
+    }
+
+    &:nth-child(even) {
+      flex-direction: row-reverse;
+    }
+  }
+
+  &__info {
+  }
+
+  &__heading {
+    margin-bottom: rem(30);
+    max-width: 16ch;
+  }
+
+  &__desc {
+    margin-bottom: rem(30);
+    max-width: 40ch;
+    font-size: rem(20);
+  }
+
+  &__link {
+    font-size: rem(20);
+    font-weight: 700;
+
+    & a:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__gif {
+    &:last-child {
+      max-width: rem(518);
+      max-height: rem(518);
+    }
+  }
+}

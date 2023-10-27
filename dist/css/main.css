@@ -107,6 +107,16 @@ a:active {
   text-decoration: none;
 }
 
+h1 {
+  font-size: 4.0625rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 3.125rem;
+  font-weight: 700;
+}
+
 button {
   all: unset;
 }
@@ -188,8 +198,6 @@ button {
 .hero__heading {
   margin-bottom: 3.125rem;
   max-width: 15ch;
-  font-size: 4.0625rem;
-  font-weight: 600;
 }
 .hero__desc {
   margin-bottom: 3.125rem;
@@ -216,11 +224,45 @@ button {
 }
 .partners__heading {
   margin: 0 auto 4.375rem;
-  font-size: 3.125rem;
   text-align: center;
   max-width: 23ch;
 }
 .partners__logos {
   display: flex;
   justify-content: space-between;
+}
+
+.about {
+  padding: 5.625rem 0 9.375rem;
+}
+.about__advantages {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.about__advantages:not(:last-child) {
+  margin-bottom: 15.625rem;
+}
+.about__advantages:nth-child(even) {
+  flex-direction: row-reverse;
+}
+.about__heading {
+  margin-bottom: 1.875rem;
+  max-width: 16ch;
+}
+.about__desc {
+  margin-bottom: 1.875rem;
+  max-width: 40ch;
+  font-size: 1.25rem;
+}
+.about__link {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+.about__link a:hover {
+  text-decoration: underline;
+}
+.about__gif:last-child {
+  max-width: 32.375rem;
+  max-height: 32.375rem;
 }/*# sourceMappingURL=main.css.map */
