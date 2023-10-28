@@ -298,4 +298,36 @@ button {
   text-align: center;
   max-width: 30ch;
   font-size: 1.125rem;
+}
+
+.productivity {
+  padding: 9.375rem 0 13.125rem;
+}
+.productivity__heading {
+  margin-bottom: 4.6875rem;
+  text-align: center;
+}
+.productivity__content {
+  display: flex;
+  justify-content: space-between;
+}
+.productivity__image {
+  margin-bottom: 3.125rem;
+}
+.productivity__image img {
+  max-width: 179px;
+  max-height: 166px;
+}
+.productivity__title {
+  margin-bottom: 1.875rem;
+  font-size: 1.875rem;
+}
+.productivity__desc {
+  margin-bottom: 1.5625rem;
+  font-size: 1.25rem;
+  max-width: 35ch;
+}
+.productivity__link {
+  font-size: 1.25rem;
+  text-decoration: underline;
 }/*# sourceMappingURL=main.css.map */

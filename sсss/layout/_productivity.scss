@@ -1,0 +1,45 @@
+@use "../abstracts" as *;
+
+.productivity {
+  padding: rem(150) 0 rem(210);
+  &__body {
+  }
+
+  &__heading {
+    margin-bottom: rem(75);
+    text-align: center;
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__card {
+  }
+
+  &__image {
+    margin-bottom: rem(50);
+
+    & img {
+      max-width: 179px;
+      max-height: 166px;
+    }
+  }
+
+  &__title {
+    margin-bottom: rem(30);
+    font-size: rem(30);
+  }
+
+  &__desc {
+    margin-bottom: rem(25);
+    font-size: rem(20);
+    max-width: 35ch;
+  }
+
+  &__link {
+    font-size: rem(20);
+    text-decoration: underline;
+  }
+}
