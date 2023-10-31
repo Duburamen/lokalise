@@ -330,4 +330,24 @@ button {
 .productivity__link {
   font-size: 1.25rem;
   text-decoration: underline;
+}
+
+.banner-1 {
+  padding: 4.6875rem 0;
+  background: #C9E8F2;
+}
+.banner-1__body {
+  display: flex;
+}
+.banner-1__quote {
+  margin-right: 5.3125rem;
+  max-width: 100ch;
+}
+.banner-1__text {
+  margin-bottom: 1.5625rem;
+  font-size: 1.875rem;
+}
+.banner-1__name {
+  margin-bottom: 0.625rem;
+  font-size: 0.9375rem;
 }/*# sourceMappingURL=main.css.map */

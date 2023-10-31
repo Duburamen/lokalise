@@ -1,0 +1,31 @@
+@use "../abstracts" as *;
+
+.banner-1 {
+  padding: rem(75) 0;
+  background: #C9E8F2;
+
+  &__body {
+    display: flex;
+  }
+
+  &__quote {
+    margin-right: rem(85);
+    max-width: 100ch;
+  }
+
+  &__text {
+    margin-bottom: rem(25);
+    font-size: rem(30);
+  }
+
+  &__name {
+    margin-bottom: rem(10);
+    font-size: rem(15);
+  }
+
+  &__logo {
+  }
+
+  &__photo {
+  }
+}
