@@ -1,1 +1,57 @@
 @use "../abstracts" as *;
+
+.banner-2 {
+  padding: rem(80) 0;
+  background: #dabc98;
+
+  &__body {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__image {
+  }
+
+  &__text {
+    max-width: 25ch;
+    font-size: rem(35);
+    font-weight: 700;
+  }
+
+  &__ratings {
+    display: flex;
+    position: relative;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: -25%;
+        left: rem(-70);
+        border-left: 1px solid black;
+        height: rem(170);
+    }
+  }
+
+  &__rating {
+    display: flex;
+    flex-direction: column;
+
+    &:first-child {
+        margin-right: rem(70);
+    }
+
+    & svg:first-child {
+        margin-bottom: rem(20);
+    }
+
+    & svg:nth-child(2) {
+        margin-bottom: rem(15);
+    }
+
+    & span {
+        font-size: rem(15);
+        letter-spacing: rem(0.75);
+    }
+  }
+}

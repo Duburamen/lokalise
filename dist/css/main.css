@@ -350,4 +350,47 @@ button {
 .banner-1__name {
   margin-bottom: 0.625rem;
   font-size: 0.9375rem;
+}
+.banner-2 {
+  padding: 5rem 0;
+  background: #dabc98;
+}
+.banner-2__body {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.banner-2__text {
+  max-width: 25ch;
+  font-size: 2.1875rem;
+  font-weight: 700;
+}
+.banner-2__ratings {
+  display: flex;
+  position: relative;
+}
+.banner-2__ratings::before {
+  content: "";
+  position: absolute;
+  top: -25%;
+  left: -4.375rem;
+  border-left: 1px solid black;
+  height: 10.625rem;
+}
+.banner-2__rating {
+  display: flex;
+  flex-direction: column;
+}
+.banner-2__rating:first-child {
+  margin-right: 4.375rem;
+}
+.banner-2__rating svg:first-child {
+  margin-bottom: 1.25rem;
+}
+.banner-2__rating svg:nth-child(2) {
+  margin-bottom: 0.9375rem;
+}
+.banner-2__rating span {
+  font-size: 0.9375rem;
+  letter-spacing: 0.046875rem;
 }/*# sourceMappingURL=main.css.map */
