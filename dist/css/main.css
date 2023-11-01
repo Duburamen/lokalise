@@ -393,4 +393,26 @@ button {
 .banner-2__rating span {
   font-size: 0.9375rem;
   letter-spacing: 0.046875rem;
+}
+
+.integrate {
+  padding: 6.25rem 0 10rem;
+}
+.integrate__body {
+  text-align: center;
+}
+.integrate__heading {
+  margin-bottom: 1.5625rem;
+}
+.integrate__text {
+  margin-bottom: 1.5625rem;
+  font-size: 1.5625rem;
+}
+.integrate__image img {
+  margin: 0 auto;
+}
+.integrate__button {
+  min-width: 12.1875rem;
+  min-height: 3.75rem;
+  text-align: center;
 }/*# sourceMappingURL=main.css.map */

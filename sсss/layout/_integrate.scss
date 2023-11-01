@@ -1,0 +1,30 @@
+@use "../abstracts" as *;
+
+.integrate {
+  padding: rem(100) 0 rem(160);
+
+  &__body {
+    text-align: center;
+  }
+
+  &__heading {
+    margin-bottom: rem(25);
+  }
+
+  &__text {
+    margin-bottom: rem(25);
+    font-size: rem(25);
+  }
+
+  &__image {
+    & img {
+      margin: 0 auto;
+    }
+  }
+
+  &__button {
+    min-width: rem(195);
+    min-height: rem(60);
+    text-align: center;
+  }
+}
