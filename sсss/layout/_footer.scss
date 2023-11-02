@@ -1,0 +1,104 @@
+@use "../abstracts/" as *;
+
+footer {
+  padding: rem(95) 0 rem(45);
+}
+
+.footer {
+  &__body {
+    padding-bottom: rem(95);
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #000;
+  }
+
+  &__studies {
+  }
+
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+    gap: rem(35);
+  }
+
+  &__section {
+    min-width: rem(190);
+  }
+
+  &__title {
+    font-size: rem(20);
+    font-weight: 700;
+  }
+
+  &__menu {
+    list-style: none;
+    padding: 0;
+  }
+
+  &__item {
+    font-size: rem(15);
+    
+    &:not(:last-child) {
+        margin-bottom: rem(15);
+    }
+
+    &:hover {
+        text-decoration: underline;
+    }
+  }
+
+  &__copyright {
+    padding-top: rem(50);
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__left {
+    display: flex;
+    gap: rem(15);
+  }
+
+  &__logo {
+  }
+
+  &__subtext {
+    max-width: 40ch;
+    font-size: rem(12);
+  }
+
+  &__rights {
+    font-size: rem(12);
+  }
+}
+
+.studies {
+  &__heading {
+    margin-bottom: rem(30);
+    font-size: rem(40);
+    font-weight: 700;
+  }
+
+  &__image {
+    & img {
+      margin-bottom: rem(30);
+    }
+
+    & svg {
+      margin-bottom: rem(10);
+    }
+  }
+
+  &__text {
+    font-size: rem(20);
+    max-width: 28ch;
+  }
+
+  &__link {
+    font-size: rem(20);
+    font-weight: 700;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

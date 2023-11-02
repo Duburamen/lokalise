@@ -430,4 +430,79 @@ button:focus {
   background: #000;
   color: #fff;
   font-weight: 700;
+}
+
+footer {
+  padding: 5.9375rem 0 2.8125rem;
+}
+
+.footer__body {
+  padding-bottom: 5.9375rem;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #000;
+}
+.footer__nav {
+  display: flex;
+  justify-content: space-between;
+  gap: 2.1875rem;
+}
+.footer__section {
+  min-width: 11.875rem;
+}
+.footer__title {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+.footer__menu {
+  list-style: none;
+  padding: 0;
+}
+.footer__item {
+  font-size: 0.9375rem;
+}
+.footer__item:not(:last-child) {
+  margin-bottom: 0.9375rem;
+}
+.footer__item:hover {
+  text-decoration: underline;
+}
+.footer__copyright {
+  padding-top: 3.125rem;
+  display: flex;
+  justify-content: space-between;
+}
+.footer__left {
+  display: flex;
+  gap: 0.9375rem;
+}
+.footer__subtext {
+  max-width: 40ch;
+  font-size: 0.75rem;
+}
+.footer__rights {
+  font-size: 0.75rem;
+}
+
+.studies__heading {
+  margin-bottom: 1.875rem;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+.studies__image img {
+  margin-bottom: 1.875rem;
+}
+.studies__image svg {
+  margin-bottom: 0.625rem;
+}
+.studies__text {
+  font-size: 1.25rem;
+  max-width: 28ch;
+}
+.studies__link {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+.studies__link:hover {
+  text-decoration: underline;
 }/*# sourceMappingURL=main.css.map */
