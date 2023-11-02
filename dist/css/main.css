@@ -119,42 +119,35 @@ h2 {
 
 button {
   all: unset;
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+}
+button:focus {
+  outline: 1px solid #fff;
+  outline-offset: -4px;
 }
 
 .button-black {
   border: 1px solid hsla(0, 0%, 0%, 0.5);
-  font-weight: 700;
   background: #fff;
   color: #000;
-  font-size: 1rem;
-  cursor: pointer;
   transition: background 0.15s ease-in, color 0.15s ease;
 }
 .button-black:hover, .button-black:focus {
   background: #000;
   color: #fff;
 }
-.button-black:focus {
-  outline: 1px solid #fff;
-  outline-offset: -4px;
-}
 
 .button-orange {
   border: 1px solid hsl(13, 100%, 61%);
-  font-weight: 700;
   background: hsl(13, 100%, 61%);
   color: #fff;
-  font-size: 1rem;
-  cursor: pointer;
   transition: background 0.15s ease-in, color 0.15s ease;
 }
 .button-orange:hover, .button-orange:focus {
   background: hsl(13, 69%, 53%);
   color: #fff;
-}
-.button-orange:focus {
-  outline: 1px solid #fff;
-  outline-offset: -4px;
 }
 
 .header {
@@ -415,4 +408,26 @@ button {
   min-width: 12.1875rem;
   min-height: 3.75rem;
   text-align: center;
+}
+
+.trial {
+  background: #FF9C7D;
+  padding: 7.5rem 0 10rem;
+}
+.trial__body {
+  text-align: center;
+}
+.trial__heading {
+  margin-bottom: 1.875rem;
+}
+.trial__text {
+  margin-bottom: 3.4375rem;
+  font-size: 1.25rem;
+}
+.trial__button {
+  min-width: 10rem;
+  min-height: 3.75rem;
+  background: #000;
+  color: #fff;
+  font-weight: 700;
 }/*# sourceMappingURL=main.css.map */
